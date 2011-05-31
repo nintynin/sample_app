@@ -148,7 +148,7 @@ describe User do
       end
       
       it "should return nil for an email address with no user" do
-        User.autenticate("bar@foo.com", @attr[:password]).should be_nil
+        User.authenticate("bar@foo.com", @attr[:password]).should be_nil
       end
       
       it "should return nil for an email address with no user" do
